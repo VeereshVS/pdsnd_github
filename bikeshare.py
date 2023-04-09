@@ -157,6 +157,26 @@ def user_stats(df):
     print('-'*40)
 
 
+def display_raw_data(df):
+    """Displays Raw Data in bikeshare data"""
+    print(df.shape[0])
+    iter_count = 0
+    while True:
+        display = input('\nWould you like to See the Raw Bikehare Data? Enter yes or no.\n')
+        if display == 'yes':
+            if iter_count < 1:
+                print("First 5 rows of Bikeshare Data -> \n")            
+            else:
+                print("Next 5 rows of Bikeshare Data -> \n")
+            if iter_count+5 <= df.shape[0]:
+                print(df[iter_count:iter_count+5])
+            else:
+                print(df[iter_count:])
+            iter_count += 5     
+        else:
+            break
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -166,6 +186,9 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+
+        # Display Raw Data from Bikeshare data 
+        display_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
