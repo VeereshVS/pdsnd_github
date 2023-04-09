@@ -120,14 +120,21 @@ def user_stats(df):
 
 def main():
     while True:
+        # Get Inputs from User
         city, month, day = get_filters()
+        # Load the Data as per user prompts
         df = load_data(city, month, day)
 
+        # Display statistics on the most frequent times of travel
         time_stats(df)
+        # Display statistics on the most popular stations and trip
         station_stats(df)
+        # Display statistics on the total and average trip duration
         trip_duration_stats(df)
+        # Display statistics on bikeshare users
         user_stats(df)
 
+        # Ask for User prompt for restart the report generation
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
