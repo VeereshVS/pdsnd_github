@@ -9,8 +9,12 @@
 This project is part of the Udacity's Programming for Data Science with Python Nanodegree. The project involves analyzing bikeshare data from three cities (Chicago, New York City and Washington) in US.
 
 ### Files used
-Include the files used
+Files Used -> \
+	&ensp;US BikeShare Data - \
+	&emsp;	* chicago.csv \
+	&emsp;	* new_york_city.csv \
+	&emsp;	* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+&ensp;* Thanks to Mentors and Peers \
+&ensp;* Pandas Documentaion -> https://pandas.pydata.org/docs/reference/
