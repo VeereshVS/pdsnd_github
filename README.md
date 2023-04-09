@@ -17,4 +17,4 @@ Files Used -> \
 
 ### Credits
 &ensp;* Thanks to Mentors and Peers \
-&ensp;* Pandas Documentaion -> https://pandas.pydata.org/docs/reference/
+&ensp;* Pandas Documentation -> https://pandas.pydata.org/docs/reference/
